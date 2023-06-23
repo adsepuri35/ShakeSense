@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "chart.js": "^3.8.0",
+    "firebase": "^9.8.2",
+    "plotly.js": "^2.12.1"
+  }
+}
