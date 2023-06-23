@@ -1,0 +1,106 @@
+<!--
+ShakeSense
+Team Members: Vibhav Gaka, Andrew Gerchak, Patrick Keenan, Advait Sepuri
+Date Completed: 6/3/22
+Sign in/Data Collection Page HTML
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>ShakeSense</title> 
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://css.gg/css?=|facebook|instagram|twitter|google" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    </head>
+    <body>
+
+        <section class="header" id ="use">
+            <!-- Transparent nav bar + light/mars mode switch-->
+            <nav>
+                <a href="../html/index.html" ><img src="../images/temp-logo.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="../html/use.html" id = "line">HOW IT WORKS</a></li>
+                        <li><a href="../html/profile.html" id = "line">PROFILE</a></li>
+
+                    </ul>
+                    
+                </div>
+            </nav>
+            
+            <!--Opening text for main page-->
+            <div class="text-box">
+                <h1>Profile</h1>
+                <p>
+                    Login or create an account to view your data!
+                </p>
+            </div>
+    
+            <!--Bobbing arrow animation-->
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <!--User sign up/sign in-->
+        <section class="form-container">
+            <p></p>
+            <h3>Add the following to sign up or login!</h3>
+            <label for="number">What is your phone number? (Ex: 1234567890)</label>
+            <input type="number" placeholder="Phone number" name="number" id="number" required>
+            <p></p>
+            <label for="name">What is your password?</label>
+            <input type="text" placeholder="Password" name="pass" id="pass" required>
+            <p></p>
+            <p></p>
+            <div class = "profile-button">
+                <button id = "sign-up" class="bouncy">Sign up</button>
+                <button id = "log-in" class="bouncy">Log in</button>
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>   
+        </section>
+
+        <!--Allows user to start/stop data collection-->
+        <section class ="dataRecord" id="invisible">
+            <h3>Press the buttons below to start and stop recording data!</h3>
+            <div class = "profile-button2">
+                <button id = "start" class="bouncy">Start</button>
+                <button id = "stop" class="bouncy">Stop</button>
+            </div>
+        </section>
+    
+
+        
+        <!--Displays the key for users to read the data in their graph-->
+        <div class="chartContainer" id = "invisible2">
+            <div class="chartDes">
+                <p>X-axis: Time Duration (s)</p>
+                <p>Y-axis: Severity of Tremor</p>
+                <p>You are experiencing a tremor when the severity is at least 4.</p>
+            </div>
+            <canvas id="myChart"></canvas>
+            
+        </div>
+
+        <script type="text/javascript" src="../js/code2.js"></script>
+        <script type="module" src="../js/chart.js"></script>
+        <script type="module" src="../js/insert.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html> 
